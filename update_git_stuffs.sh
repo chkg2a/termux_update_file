@@ -1,8 +1,7 @@
 #!/bin/sh
 
-obs_file_path="/storage/emulated/0/"
+obs_file_path="/storage/emulated/0/obsidian_ChK"
+studies_file_path="/storage/emulated/0/studies"
 
-git clone git@github.com:chkg2a/obsidian_ChK ~/obsidian_ChK
-cd obsidian_ChK && git pull git@github.com:chkg2a/obsidian_ChK
-
-$(cp -r ~/obsidian_ChK $obs_file_path)
+cd $obs_file_path && git pull git@github.com:chkg2a/obsidian_ChK
+cd $studies_file_path && git pull git@github.com:chkg2a/studies
